@@ -10,8 +10,6 @@ const signin = require("./controllers/signin");
 const profile = require("./controllers/profile");
 const image = require("./controllers/image");
 
-// console.log(process.env.POSTGRES_USER);
-
 const db = knex({
   client: "pg",
   connection: process.env.POSTGRES_URI
